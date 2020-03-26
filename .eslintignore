@@ -1,0 +1,11 @@
+#ignore node_modules
+node_modules
+
+#ignore build folder
+build
+
+#ignore yarn, npm lock files
+package-lock.json
+yarn.lock
+
+

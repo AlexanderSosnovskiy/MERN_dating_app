@@ -1,0 +1,42 @@
+{
+  "name": "mern-dating-application",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Realtime dating application",
+  "scripts": {
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "format": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "lauch": "concurrently \"cd server && node build/index.js\" \"cd client && serve -s build\"",
+    "lint": "eslint ./**/*",
+    "start": "concurrently \"cd server && npm run start\" \"cd client && npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^2.1.0",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^1.19.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "author": "Alexander Sosnovskiy <cjcyfdek@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/AlexanderSosnovskiy/",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/AlexanderSosnovskiy/"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/AlexanderSosnovskiy/"
+  },
+  "keywords": [
+    "dating",
+    "soulmate",
+    "love",
+    "Node.js",
+    "Express.js",
+    "React.js",
+    "Redux"
+  ]
+}
